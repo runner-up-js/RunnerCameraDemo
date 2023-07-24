@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".CameraFragment"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@android:color/black"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/black"
+                    app:tabGravity="center"
+                    app:tabMaxWidth="50dp"
+                    app:tabSelectedTextColor="#A5DE2A"
+                    app:tabTextColor="@android:color/white"
+                    app:tabMode="fixed"
+                    app:tabIndicatorColor="#A5DE2A"
+                    app:tabIndicator="@drawable/collect_tablayour_ind_style" />
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:src="@mipmap/icon_home"-->
+<!--                    android:layout_marginLeft="13dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:id="@+id/back"-->
+<!--                    />-->
+            </FrameLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <com.postcard.camerax.CameraPreview
+            android:id="@+id/camer_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:video_width="1228"
+            app:video_height="1795"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/check_poto"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:paddingTop="3dp"-->
+<!--            android:layout_marginLeft="37dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            android:paddingRight="10dp"-->
+<!--            >-->
+
+<!--          <ImageView-->
+<!--              android:layout_width="30dp"-->
+<!--              android:layout_height="30dp"-->
+<!--              android:background="@null"-->
+<!--              android:layout_marginBottom="8dp"-->
+<!--              android:src="@mipmap/icon_edit_image" />-->
+<!--          <TextView-->
+<!--              android:layout_width="wrap_content"-->
+<!--              android:layout_height="wrap_content"-->
+<!--              android:text="上传"-->
+<!--              android:textSize="14sp"-->
+<!--              android:textColor="#FFFFFFFF"-->
+<!--              android:fontFamily="PingFangSC"-->
+<!--              android:gravity="center"-->
+<!--              />-->
+<!--        </LinearLayout>-->
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/take_poto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:src="@mipmap/icon_cream"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

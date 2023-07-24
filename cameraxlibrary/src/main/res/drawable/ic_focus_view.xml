@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false">
+    <stroke android:color="@color/white"
+        android:width="2dp"></stroke>
+    <corners android:radius="5dp"/>
+    <size
+        android:width="@dimen/tap_view_size"
+        android:height="@dimen/tap_view_size"></size>
+    <padding
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp"></padding>
+</shape>
